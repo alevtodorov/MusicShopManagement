@@ -27,7 +27,7 @@ namespace MusicShopManager.Core.Commands
                 throw new ArgumentException(string.Format("The music shop {0} does not exist", userInput[1]));
             }
 
-            Console.WriteLine("===== My Music Shop =====");
+            Console.WriteLine("===== {0} =====", shop.Name);
             if (shop.Articles.Count > 0)
             {
                 foreach (var item in shop.Articles)
