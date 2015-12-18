@@ -20,7 +20,7 @@ namespace MusicShopManager.Core.Commands
                 }
             }
             db.Add(new MusicShop(userInput[1]));
-            Console.WriteLine("Music shop My Music Shop created");
+            Console.WriteLine("Music shop {0} created", userInput[1]);
         }
     }
 }
